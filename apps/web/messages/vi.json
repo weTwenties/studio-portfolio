@@ -1,0 +1,330 @@
+{
+  "Metadata": {
+    "title": "Studio Portfolio",
+    "description": "Nền tảng portfolio kết hợp website công khai, CMS nhẹ và luồng publish dựa trên snapshot."
+  },
+  "Ui": {
+    "language": "Ngôn ngữ",
+    "switchToVi": "Tiếng Việt",
+    "switchToEn": "Tiếng Anh",
+    "closeCaseStudy": "Đóng case study",
+    "caseStudy": "Nghiên cứu trường hợp"
+  },
+  "Site": {
+    "brand": {
+      "mark": "SP",
+      "name": "Studio Portfolio",
+      "homeAriaLabel": "Trang chủ Studio Portfolio"
+    },
+    "nav": {
+      "ariaLabel": "Điều hướng chính",
+      "links": [
+        { "href": "#services", "label": "Dịch vụ" },
+        { "href": "#process", "label": "Quy trình" },
+        { "href": "#works", "label": "Dự án" },
+        { "href": "#team", "label": "Đội ngũ" }
+      ],
+      "cta": { "href": "#contact", "label": "Liên hệ" }
+    },
+    "footer": {
+      "line1": "Studio Portfolio · Demo nền tảng dual-surface",
+      "line2": "Product engineering · Nền tảng nội dung · Trải nghiệm tương tác"
+    },
+    "contact": {
+      "sectionId": "contact",
+      "mailtoEmail": "hello@example.com",
+      "subjectTemplate": "Yêu cầu dự án từ {name}",
+      "bodyTemplate": "Tên: {name}\nEmail: {email}\nLoại dự án: {project}\n\nTóm tắt:\n{brief}",
+      "eyebrow": "Liên hệ",
+      "heading": "Kể cho chúng tôi về sản phẩm tiếp theo của bạn.",
+      "lead": "Chia sẻ bạn đang xây gì, phạm vi dự kiến và timeline. Chúng tôi sẽ giúp định hình hướng tiếp cận và lộ trình triển khai.",
+      "formNote": "Sẽ mở ứng dụng email của bạn với phần tóm tắt đã được điền sẵn.",
+      "submitLabel": "Gửi yêu cầu",
+      "formId": "quickContact",
+      "fields": {
+        "name": {
+          "id": "contactName",
+          "name": "name",
+          "label": "Tên",
+          "placeholder": "Tên của bạn",
+          "autoComplete": "name",
+          "type": "text",
+          "required": true
+        },
+        "email": {
+          "id": "contactEmail",
+          "name": "email",
+          "label": "Email",
+          "placeholder": "you@company.com",
+          "autoComplete": "email",
+          "type": "email",
+          "required": true
+        },
+        "project": {
+          "id": "contactProject",
+          "name": "project",
+          "label": "Loại dự án",
+          "defaultOption": "Nền tảng nội dung",
+          "options": [
+            "Nền tảng nội dung",
+            "Product engineering",
+            "Frontend development",
+            "Trải nghiệm tương tác",
+            "Chưa chắc"
+          ]
+        },
+        "brief": {
+          "id": "contactBrief",
+          "name": "brief",
+          "label": "Tóm tắt nhanh",
+          "placeholder": "Bạn đang xây gì, và khi nào bạn cần?"
+        }
+      }
+    }
+  },
+  "Hero": {
+    "eyebrow": "Tham chiếu product studio",
+    "headline": "Thiết kế và xây dựng sản phẩm số có chiều sâu.",
+    "lead": "Studio Portfolio minh họa website công khai kết hợp CMS nhẹ — thành viên, dự án, nội dung song ngữ và publish snapshot trong một luồng thống nhất.",
+    "headlineDataOdId": "hero-headline",
+    "primaryCta": {
+      "href": "/projects",
+      "label": "Xem dự án"
+    },
+    "viewProject": "Khám phá dự án",
+    "showcaseButtonLabel": "Mở xem trước",
+    "miniStatsAriaLabel": "Điểm nổi bật nền tảng",
+    "miniStats": [
+      { "value": "02", "caption": "Hai bề mặt: web + CMS" },
+      { "value": "vi/en", "caption": "Luồng nội dung song ngữ" },
+      { "value": "JSON", "caption": "Publish dựa trên snapshot" }
+    ],
+    "showcase": {
+      "cardId": "hero-showcase",
+      "dataOdId": "hero-showcase",
+      "ariaLabel": "Xem trước hero tương tác",
+      "wrapRevealDelayMs": 120,
+      "boxLabel": {
+        "line1": "Nhấn để mở",
+        "line2": "xem trước nền tảng"
+      },
+      "prize": {
+        "title": "Luồng dual-surface",
+        "body": "Soạn thảo trong CMS, publish ra JSON snapshot và phục vụ website công khai từ cùng một lớp dữ liệu."
+      },
+      "openButtonLabel": "Mở xem trước"
+    }
+  },
+  "Services": {
+    "sectionId": "services",
+    "dataOdId": "services",
+    "section": {
+      "eyebrow": "Dịch vụ",
+      "heading": "Năng lực được phản ánh trong bản tham chiếu này.",
+      "aside": "Product engineering, frontend development, nền tảng nội dung và trải nghiệm tương tác — gom trong một monorepo dễ bảo trì."
+    },
+    "cards": [
+      {
+        "indexLabel": "01 / Engineering",
+        "title": "Product engineering",
+        "body": "Triển khai end-to-end sản phẩm web hiện đại với ranh giới rõ giữa CMS, lớp dữ liệu và trải nghiệm công khai.",
+        "revealDelayMs": 0
+      },
+      {
+        "indexLabel": "02 / Frontend",
+        "title": "Frontend development",
+        "body": "Giao diện responsive, routing song ngữ, component accessible và pattern triển khai ưu tiên hiệu năng.",
+        "revealDelayMs": 90
+      },
+      {
+        "indexLabel": "03 / Platform",
+        "title": "Nền tảng nội dung",
+        "body": "Trải nghiệm công khai kết hợp quy trình quản trị nhẹ, trạng thái draft/publish và serialize snapshot.",
+        "revealDelayMs": 180
+      }
+    ]
+  },
+  "Works": {
+    "sectionId": "works",
+    "dataOdIdGrid": "selected-works",
+    "extend": {
+      "label": "Xem tất cả dự án"
+    },
+    "disclaimer": "Các dự án demo là ví dụ hư cấu minh họa luồng publish.",
+    "section": {
+      "eyebrow": "Dự án tiêu biểu",
+      "heading": "Case study hư cấu từ bộ dữ liệu demo.",
+      "aside": "Atlas Commerce, Northstar Dashboard và Frame Studio thể hiện cách dự án, case study và nội dung song ngữ đi qua nền tảng."
+    },
+    "items": [
+      {
+        "caseId": "atlas-commerce",
+        "visualLabel": "Atlas",
+        "title": "Atlas Commerce",
+        "description": "Nền tảng thương mại điện tử với luồng checkout tối ưu và hành trình mua trên mobile.",
+        "tags": ["Web", "E-commerce"],
+        "revealDelayMs": 0
+      },
+      {
+        "caseId": "northstar-dashboard",
+        "visualLabel": "Northstar",
+        "title": "Northstar Dashboard",
+        "description": "Dashboard phân tích real-time với hệ phân cấp thông tin rõ và layout responsive.",
+        "tags": ["Dashboard", "Analytics"],
+        "revealDelayMs": 80
+      },
+      {
+        "caseId": "frame-studio",
+        "visualLabel": "Frame",
+        "title": "Frame Studio",
+        "description": "Công cụ portfolio cho studio sáng tạo với quản lý dự án qua CMS.",
+        "tags": ["CMS", "Portfolio"],
+        "revealDelayMs": 160
+      }
+    ]
+  },
+  "Process": {
+    "sectionId": "process",
+    "dataOdId": "process",
+    "section": {
+      "eyebrow": "Quy trình",
+      "heading": "Từ content model đến snapshot đã publish.",
+      "aside": "Chiến lược, triển khai và publish trong một vòng lặp để nền tảng dễ hiểu và dễ bảo trì."
+    },
+    "steps": [
+      {
+        "num": "01",
+        "title": "Mô hình hóa nội dung",
+        "body": "Định nghĩa thành viên, dự án, cài đặt site và trường song ngữ khớp với trải nghiệm công khai."
+      },
+      {
+        "num": "02",
+        "title": "Soạn thảo trong CMS",
+        "body": "Chỉnh sửa nội dung trong workspace tập trung với validation, preview và trạng thái draft/publish rõ ràng."
+      },
+      {
+        "num": "03",
+        "title": "Publish snapshot",
+        "body": "Serialize bản ghi đã publish thành JSON snapshot cho website công khai mà không cần deploy lại code ứng dụng."
+      },
+      {
+        "num": "04",
+        "title": "Phục vụ trải nghiệm",
+        "body": "Hiển thị danh bạ đội ngũ, case study dự án và luồng liên hệ từ cùng bộ dữ liệu demo."
+      }
+    ]
+  },
+  "Team": {
+    "sectionId": "team",
+    "dataOdId": "team",
+    "extend": {
+      "label": "Xem toàn bộ đội ngũ"
+    },
+    "section": {
+      "eyebrow": "Đội ngũ",
+      "heading": "Thành viên demo từ snapshot đã publish.",
+      "aside": "Alex Nguyen và Jordan Lee minh họa cách hồ sơ thành viên đi từ draft CMS đến danh bạ công khai."
+    },
+    "members": [
+      {
+        "initial": "A",
+        "role": "Alex Nguyen",
+        "bio": "Xây dựng sản phẩm web hiện đại và trải nghiệm nền tảng.",
+        "revealDelayMs": 0
+      },
+      {
+        "initial": "J",
+        "role": "Jordan Lee",
+        "bio": "Thiết kế hệ thống giao diện và trải nghiệm người dùng.",
+        "revealDelayMs": 70
+      }
+    ]
+  },
+  "CaseStudies": {
+    "atlas-commerce": {
+      "kicker": "E-commerce / Checkout",
+      "title": "Atlas Commerce",
+      "text": "Tham chiếu thương mại điện tử hư cấu tập trung vào conversion mobile, độ rõ checkout và bề mặt sản phẩm dễ bảo trì.",
+      "points": [
+        ["Vấn đề", "Conversion mobile thấp trên luồng checkout cũ."],
+        ["Giải pháp", "Tái thiết kế checkout với ít bước hơn và trạng thái rõ ràng hơn."],
+        ["Kết quả", "Tăng 32% conversion trong narrative demo."]
+      ]
+    },
+    "northstar-dashboard": {
+      "kicker": "Dashboard / Analytics",
+      "title": "Northstar Dashboard",
+      "text": "Ví dụ dashboard phân tích real-time nhấn mạnh khả năng quét thông tin, layout responsive và trình bày dữ liệu dày.",
+      "points": [
+        ["Phạm vi", "Chỉ số vận hành cho team sản phẩm và growth."],
+        ["Cách làm", "Biểu đồ theo component với hệ phân cấp visual nhất quán."],
+        ["Giá trị", "Pattern dashboard tái sử dụng cho nhiều dòng sản phẩm."]
+      ]
+    },
+    "frame-studio": {
+      "kicker": "CMS / Portfolio",
+      "title": "Frame Studio",
+      "text": "Khái niệm portfolio builder cho thấy studio sáng tạo quản lý dự án và publish case study từ một luồng duy nhất.",
+      "points": [
+        ["Nhu cầu", "Studio cần portfolio có CMS mà không cần hạ tầng nặng."],
+        ["Triển khai", "Editor nhẹ, trường song ngữ và publish snapshot."],
+        ["Giá trị", "Pattern tham chiếu cho nền tảng nội dung dual-surface."]
+      ]
+    }
+  },
+  "Portfolio": {
+    "nav": {
+      "ariaLabel": "Điều hướng portfolio",
+      "home": "Trang chủ",
+      "team": "Đội ngũ",
+      "projects": "Dự án"
+    },
+    "team": {
+      "metaTitle": "Đội ngũ — Studio Portfolio",
+      "kicker": "Danh bạ đội ngũ",
+      "title": "Thành viên publish qua CMS.",
+      "lead": "Khám phá hồ sơ thành viên demo và tham chiếu dự án liên quan từ lớp snapshot.",
+      "members": [
+        {
+          "id": "member-1",
+          "slug": "alex-nguyen",
+          "initial": "A",
+          "name": "Alex Nguyen",
+          "role": "Software Engineer",
+          "bio": "Xây dựng sản phẩm web hiện đại và trải nghiệm nền tảng."
+        },
+        {
+          "id": "member-2",
+          "slug": "jordan-lee",
+          "initial": "J",
+          "name": "Jordan Lee",
+          "role": "Product Designer",
+          "bio": "Thiết kế hệ thống giao diện và trải nghiệm người dùng."
+        }
+      ],
+      "joinedProjects": "Dự án tham gia",
+      "detail": {
+        "bio": "Giới thiệu",
+        "skills": "Kỹ năng",
+        "relatedProjects": "Dự án liên quan",
+        "openCv": "Mở CV",
+        "viewProjects": "Xem dự án"
+      }
+    },
+    "projects": {
+      "metaTitle": "Dự án — Studio Portfolio",
+      "kicker": "Danh mục dự án",
+      "title": "Dự án demo từ snapshot đã publish.",
+      "lead": "Atlas Commerce, Northstar Dashboard và Frame Studio minh họa publish dự án song ngữ và trình bày case study.",
+      "viewCase": "Xem case study",
+      "modal": {
+        "close": "Đóng case study",
+        "problem": "Vấn đề",
+        "solution": "Giải pháp",
+        "result": "Kết quả",
+        "openDemo": "Mở demo",
+        "disclaimer": "Các dự án demo là ví dụ hư cấu minh họa luồng publish."
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# build
+dist/
+build/
+coverage/
+
+# environment
+.env
+.env.local
+.env.*.local
+
+# databases
+*.db
+*.sqlite
+*.sqlite3
+
+# TypeScript
+*.tsbuildinfo
+
+# OS
+.DS_Store
+
+# logs
+*.log
+
+# local runtime data
+.local/
+*.ndjson
+
+
+# vercel
+.vercel
+
+# misc
+*.pem
+next-env.d.ts
+
+# keep example env
+!.env.example

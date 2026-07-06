@@ -1,0 +1,38 @@
+{
+  "name": "studio-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @apps/web dev",
+    "dev:web": "pnpm --filter @apps/web dev",
+    "dev:cms": "pnpm --filter @apps/cms dev",
+    "build": "pnpm -r --filter ./apps/* build",
+    "build:web": "pnpm --filter @apps/web build",
+    "build:cms": "pnpm --filter @apps/cms build",
+    "start": "pnpm --filter @apps/web start",
+    "start:web": "pnpm --filter @apps/web start",
+    "start:cms": "pnpm --filter @apps/cms start",
+    "lint": "pnpm --filter @apps/web lint && pnpm --filter @apps/cms lint",
+    "typecheck": "pnpm --filter @apps/web exec tsc --noEmit && pnpm --filter @apps/cms exec tsc --noEmit",
+    "lint:web": "pnpm --filter @apps/web lint",
+    "lint:cms": "pnpm --filter @apps/cms lint",
+    "translate": "pnpm --filter @apps/web translate",
+    "db:generate": "pnpm --filter @wetwenties/db generate",
+    "db:migrate": "pnpm --filter @wetwenties/db migrate",
+    "db:migrate:deploy": "pnpm --filter @wetwenties/db migrate:deploy",
+    "db:push": "pnpm --filter @wetwenties/db push",
+    "db:studio": "pnpm --filter @wetwenties/db studio",
+    "postinstall": "pnpm db:generate"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "next": "16.2.4",
+    "tailwindcss": "^4"
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "Metadata": {
+    "title": "Studio Portfolio",
+    "description": "A dual-surface portfolio platform with a public website, lightweight CMS, and snapshot-based publishing workflow."
+  },
+  "Ui": {
+    "language": "Language",
+    "switchToVi": "Vietnamese",
+    "switchToEn": "English",
+    "closeCaseStudy": "Close case study",
+    "caseStudy": "Case study"
+  },
+  "Site": {
+    "brand": {
+      "mark": "SP",
+      "name": "Studio Portfolio",
+      "homeAriaLabel": "Studio Portfolio home"
+    },
+    "nav": {
+      "ariaLabel": "Primary navigation",
+      "links": [
+        { "href": "#services", "label": "Services" },
+        { "href": "#process", "label": "Process" },
+        { "href": "#works", "label": "Projects" },
+        { "href": "#team", "label": "Team" }
+      ],
+      "cta": { "href": "#contact", "label": "Get in touch" }
+    },
+    "footer": {
+      "line1": "Studio Portfolio · Dual-surface platform demo",
+      "line2": "Product engineering · Content platforms · Interactive experiences"
+    },
+    "contact": {
+      "sectionId": "contact",
+      "mailtoEmail": "hello@example.com",
+      "subjectTemplate": "Project inquiry from {name}",
+      "bodyTemplate": "Name: {name}\nEmail: {email}\nProject type: {project}\n\nBrief:\n{brief}",
+      "eyebrow": "Contact",
+      "heading": "Tell us about your next product.",
+      "lead": "Share what you are building, the scope you have in mind, and your timeline. We will help shape the approach and delivery path.",
+      "formNote": "Opens your email app with the brief pre-filled.",
+      "submitLabel": "Send inquiry",
+      "formId": "quickContact",
+      "fields": {
+        "name": {
+          "id": "contactName",
+          "name": "name",
+          "label": "Name",
+          "placeholder": "Your name",
+          "autoComplete": "name",
+          "type": "text",
+          "required": true
+        },
+        "email": {
+          "id": "contactEmail",
+          "name": "email",
+          "label": "Email",
+          "placeholder": "you@company.com",
+          "autoComplete": "email",
+          "type": "email",
+          "required": true
+        },
+        "project": {
+          "id": "contactProject",
+          "name": "project",
+          "label": "Project type",
+          "defaultOption": "Content platform",
+          "options": [
+            "Content platform",
+            "Product engineering",
+            "Frontend development",
+            "Interactive experience",
+            "Not sure yet"
+          ]
+        },
+        "brief": {
+          "id": "contactBrief",
+          "name": "brief",
+          "label": "Quick brief",
+          "placeholder": "What are you building, and when do you need it?"
+        }
+      }
+    }
+  },
+  "Hero": {
+    "eyebrow": "Product studio reference",
+    "headline": "Designing and building thoughtful digital products.",
+    "lead": "Studio Portfolio demonstrates a public website paired with a lightweight CMS — members, projects, bilingual content, and snapshot publishing in one cohesive workflow.",
+    "headlineDataOdId": "hero-headline",
+    "primaryCta": {
+      "href": "/projects",
+      "label": "View projects"
+    },
+    "viewProject": "Explore work",
+    "showcaseButtonLabel": "Open preview",
+    "miniStatsAriaLabel": "Platform highlights",
+    "miniStats": [
+      { "value": "02", "caption": "Surfaces: public web + CMS" },
+      { "value": "vi/en", "caption": "Bilingual content workflow" },
+      { "value": "JSON", "caption": "Snapshot-based publishing" }
+    ],
+    "showcase": {
+      "cardId": "hero-showcase",
+      "dataOdId": "hero-showcase",
+      "ariaLabel": "Interactive hero preview",
+      "wrapRevealDelayMs": 120,
+      "boxLabel": { "line1": "Click to reveal", "line2": "platform preview" },
+      "prize": {
+        "title": "Dual-surface workflow",
+        "body": "Draft in the CMS, publish to JSON snapshots, and serve the public site from the same canonical data layer."
+      },
+      "openButtonLabel": "Open preview"
+    }
+  },
+  "Services": {
+    "sectionId": "services",
+    "dataOdId": "services",
+    "section": {
+      "eyebrow": "Services",
+      "heading": "Capabilities reflected in this reference build.",
+      "aside": "Product engineering, frontend development, content platforms, and interactive experiences — composed into one maintainable monorepo."
+    },
+    "cards": [
+      {
+        "indexLabel": "01 / Engineering",
+        "title": "Product engineering",
+        "body": "End-to-end implementation of modern web products with clear boundaries between CMS, data layer, and public experience.",
+        "revealDelayMs": 0
+      },
+      {
+        "indexLabel": "02 / Frontend",
+        "title": "Frontend development",
+        "body": "Responsive interfaces, bilingual routing, accessible components, and performance-conscious delivery patterns.",
+        "revealDelayMs": 90
+      },
+      {
+        "indexLabel": "03 / Platform",
+        "title": "Content platforms",
+        "body": "Public experiences paired with lightweight management workflows, draft/publish states, and snapshot serialization.",
+        "revealDelayMs": 180
+      }
+    ]
+  },
+  "Works": {
+    "sectionId": "works",
+    "dataOdIdGrid": "selected-works",
+    "extend": {
+      "label": "View all projects"
+    },
+    "disclaimer": "Demo projects are fictional examples included to illustrate the publishing workflow.",
+    "section": {
+      "eyebrow": "Selected work",
+      "heading": "Fictional case studies from the demo dataset.",
+      "aside": "Atlas Commerce, Northstar Dashboard, and Frame Studio show how projects, case studies, and bilingual content flow through the platform."
+    },
+    "items": [
+      {
+        "caseId": "atlas-commerce",
+        "visualLabel": "Atlas",
+        "title": "Atlas Commerce",
+        "description": "E-commerce platform with an optimized checkout flow and mobile-first purchase path.",
+        "tags": ["Web", "E-commerce"],
+        "revealDelayMs": 0
+      },
+      {
+        "caseId": "northstar-dashboard",
+        "visualLabel": "Northstar",
+        "title": "Northstar Dashboard",
+        "description": "Real-time analytics dashboard with clear information hierarchy and responsive layouts.",
+        "tags": ["Dashboard", "Analytics"],
+        "revealDelayMs": 80
+      },
+      {
+        "caseId": "frame-studio",
+        "visualLabel": "Frame",
+        "title": "Frame Studio",
+        "description": "Portfolio builder for creative studios with CMS-backed project management.",
+        "tags": ["CMS", "Portfolio"],
+        "revealDelayMs": 160
+      }
+    ]
+  },
+  "Process": {
+    "sectionId": "process",
+    "dataOdId": "process",
+    "section": {
+      "eyebrow": "Process",
+      "heading": "From content model to published snapshot.",
+      "aside": "Strategy, implementation, and publishing stay in one loop so the platform remains understandable and maintainable."
+    },
+    "steps": [
+      {
+        "num": "01",
+        "title": "Model the content",
+        "body": "Define members, projects, site settings, and bilingual fields with a schema that matches the public experience."
+      },
+      {
+        "num": "02",
+        "title": "Draft in the CMS",
+        "body": "Edit content in a focused workspace with validation, previews, and clear draft versus published states."
+      },
+      {
+        "num": "03",
+        "title": "Publish snapshots",
+        "body": "Serialize published records into JSON snapshots consumed by the public site without redeploying application code."
+      },
+      {
+        "num": "04",
+        "title": "Ship the experience",
+        "body": "Serve team directories, project case studies, and contact flows from the same canonical demo dataset."
+      }
+    ]
+  },
+  "Team": {
+    "sectionId": "team",
+    "dataOdId": "team",
+    "extend": {
+      "label": "Meet the full team"
+    },
+    "section": {
+      "eyebrow": "Team",
+      "heading": "Demo members from the published snapshot.",
+      "aside": "Alex Nguyen and Jordan Lee illustrate how member profiles flow from CMS drafts to the public team directory."
+    },
+    "members": [
+      {
+        "initial": "A",
+        "role": "Alex Nguyen",
+        "bio": "Builds modern web products and platform experiences.",
+        "revealDelayMs": 0
+      },
+      {
+        "initial": "J",
+        "role": "Jordan Lee",
+        "bio": "Designs interface systems and user experiences.",
+        "revealDelayMs": 70
+      }
+    ]
+  },
+  "CaseStudies": {
+    "atlas-commerce": {
+      "kicker": "E-commerce / Checkout",
+      "title": "Atlas Commerce",
+      "text": "A fictional e-commerce reference focused on mobile conversion, checkout clarity, and a maintainable product surface.",
+      "points": [
+        ["Problem", "Low mobile conversion on a legacy checkout path."],
+        ["Solution", "Redesigned checkout flow with fewer steps and clearer state."],
+        ["Result", "32% conversion uplift in the demo narrative."]
+      ]
+    },
+    "northstar-dashboard": {
+      "kicker": "Dashboard / Analytics",
+      "title": "Northstar Dashboard",
+      "text": "A real-time analytics dashboard example emphasizing scanability, responsive layouts, and dense data presentation.",
+      "points": [
+        ["Scope", "Operational metrics for product and growth teams."],
+        ["Approach", "Componentized charts with consistent visual hierarchy."],
+        ["Outcome", "A dashboard pattern reusable across product lines."]
+      ]
+    },
+    "frame-studio": {
+      "kicker": "CMS / Portfolio",
+      "title": "Frame Studio",
+      "text": "A portfolio builder concept showing how creative studios can manage projects and publish case studies from one workflow.",
+      "points": [
+        ["Need", "Studios need CMS-backed portfolios without heavy infrastructure."],
+        ["Build", "Lightweight editor, bilingual fields, and snapshot publishing."],
+        ["Value", "A reference pattern for dual-surface content platforms."]
+      ]
+    }
+  },
+  "Portfolio": {
+    "nav": {
+      "ariaLabel": "Portfolio navigation",
+      "home": "Home",
+      "team": "Team",
+      "projects": "Projects"
+    },
+    "team": {
+      "metaTitle": "Team — Studio Portfolio",
+      "kicker": "Team directory",
+      "title": "Members published through the CMS.",
+      "lead": "Explore demo member profiles and their related project references from the snapshot layer.",
+      "members": [
+        {
+          "id": "member-1",
+          "slug": "alex-nguyen",
+          "initial": "A",
+          "name": "Alex Nguyen",
+          "role": "Software Engineer",
+          "bio": "Builds modern web products and platform experiences."
+        },
+        {
+          "id": "member-2",
+          "slug": "jordan-lee",
+          "initial": "J",
+          "name": "Jordan Lee",
+          "role": "Product Designer",
+          "bio": "Designs interface systems and user experiences."
+        }
+      ],
+      "joinedProjects": "Joined projects",
+      "detail": {
+        "bio": "Bio",
+        "skills": "Skills",
+        "relatedProjects": "Related projects",
+        "openCv": "Open CV link",
+        "viewProjects": "View projects"
+      }
+    },
+    "projects": {
+      "metaTitle": "Projects — Studio Portfolio",
+      "kicker": "Projects directory",
+      "title": "Demo projects from the published snapshot.",
+      "lead": "Atlas Commerce, Northstar Dashboard, and Frame Studio demonstrate bilingual project publishing and case study presentation.",
+      "viewCase": "View case study",
+      "modal": {
+        "close": "Close case study",
+        "problem": "Problem",
+        "solution": "Solution",
+        "result": "Result",
+        "openDemo": "Open demo link",
+        "disclaimer": "Demo projects are fictional examples included to illustrate the publishing workflow."
+      }
+    }
+  }
+}

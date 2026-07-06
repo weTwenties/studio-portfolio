@@ -1,0 +1,29 @@
+{
+  "name": "@wetwenties/db",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "generate": "prisma generate",
+    "migrate": "DATABASE_URL=\"file:../../../apps/cms/data/studio-portfolio.db\" prisma migrate dev",
+    "migrate:deploy": "DATABASE_URL=\"file:../../../apps/cms/data/studio-portfolio.db\" prisma migrate deploy",
+    "push": "DATABASE_URL=\"file:../../../apps/cms/data/studio-portfolio.db\" prisma db push",
+    "studio": "DATABASE_URL=\"file:../../../apps/cms/data/studio-portfolio.db\" prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.0",
+    "typescript": "^5"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./published-data-dir": {
+      "types": "./src/publishedDataDir.ts",
+      "default": "./src/publishedDataDir.ts"
+    }
+  }
+}

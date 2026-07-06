@@ -1,0 +1,1 @@
+export const RADIUS_MOBILE_HINT_CORE = 20

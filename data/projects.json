@@ -1,0 +1,60 @@
+[
+  {
+    "id": "project-1",
+    "slug": "atlas-commerce",
+    "title": {
+      "vi": "Atlas Commerce",
+      "en": "Atlas Commerce"
+    },
+    "summary": {
+      "vi": "Nền tảng thương mại điện tử với luồng checkout tối ưu.",
+      "en": "E-commerce platform with an optimized checkout flow."
+    },
+    "coverUrl": null,
+    "demoUrl": "https://example.com",
+    "tags": ["Web", "E-commerce"],
+    "sortOrder": 0,
+    "publishedAt": "2026-01-15T12:00:00.000Z",
+    "caseStudy": {
+      "problem": { "vi": "Conversion thấp trên mobile.", "en": "Low mobile conversion." },
+      "solution": { "vi": "Tái thiết kế checkout flow.", "en": "Redesigned checkout flow." },
+      "result": { "vi": "Tăng 32% conversion.", "en": "32% conversion uplift." }
+    }
+  },
+  {
+    "id": "project-2",
+    "slug": "northstar-dashboard",
+    "title": {
+      "vi": "Northstar Dashboard",
+      "en": "Northstar Dashboard"
+    },
+    "summary": {
+      "vi": "Dashboard phân tích dữ liệu real-time.",
+      "en": "Real-time analytics dashboard."
+    },
+    "coverUrl": null,
+    "demoUrl": "https://example.com",
+    "tags": ["Dashboard", "Analytics"],
+    "sortOrder": 1,
+    "publishedAt": "2026-01-15T12:00:00.000Z",
+    "caseStudy": null
+  },
+  {
+    "id": "project-3",
+    "slug": "frame-studio",
+    "title": {
+      "vi": "Frame Studio",
+      "en": "Frame Studio"
+    },
+    "summary": {
+      "vi": "Công cụ tạo portfolio cho studio sáng tạo.",
+      "en": "Portfolio builder for creative studios."
+    },
+    "coverUrl": null,
+    "demoUrl": "https://example.com",
+    "tags": ["CMS", "Portfolio"],
+    "sortOrder": 2,
+    "publishedAt": "2026-01-15T12:00:00.000Z",
+    "caseStudy": null
+  }
+]

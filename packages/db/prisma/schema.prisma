@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// PublishStatus: 'DRAFT' | 'PUBLISHED' (SQLite không hỗ trợ enum trong Prisma).
+
+model Member {
+  id              String    @id @default(cuid())
+  slug            String    @unique
+  sourceLocale    String    @default("vi")
+  name            String
+  role            String?
+  bio             String?
+  avatarUrl       String?
+  cvUrl           String?
+  socials         String?
+  sortOrder       Int       @default(0)
+  status          String    @default("DRAFT")
+  publishedAt     DateTime?
+  translations    String?
+  translationHash String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  memberProjects MemberProject[]
+}
+
+model Project {
+  id              String    @id @default(cuid())
+  slug            String    @unique
+  sourceLocale    String    @default("vi")
+  title           String
+  summary         String?
+  coverUrl        String?
+  demoUrl         String?
+  tags            String?
+  caseStudy       String?
+  sortOrder       Int       @default(0)
+  status          String    @default("DRAFT")
+  publishedAt     DateTime?
+  translations    String?
+  translationHash String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  memberProjects MemberProject[]
+}
+
+model MemberProject {
+  memberId  String
+  projectId String
+  roleLabel String?
+
+  member  Member  @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@id([memberId, projectId])
+}
+
+model SiteSettings {
+  id              String   @id @default("singleton")
+  sourceLocale    String   @default("vi")
+  brand           String?
+  navLinks        String?
+  footerText      String?
+  seoTitle        String?
+  seoDescription  String?
+  contactEmail    String?
+  translations    String?
+  translationHash String?
+  updatedAt       DateTime @updatedAt
+}

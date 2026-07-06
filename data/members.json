@@ -1,0 +1,40 @@
+[
+  {
+    "id": "member-1",
+    "slug": "alex-nguyen",
+    "name": "Alex Nguyen",
+    "avatarUrl": null,
+    "cvUrl": null,
+    "socials": [],
+    "sortOrder": 0,
+    "publishedAt": "2026-01-15T12:00:00.000Z",
+    "role": {
+      "vi": "Software Engineer",
+      "en": "Software Engineer"
+    },
+    "bio": {
+      "vi": "Xây dựng sản phẩm web hiện đại và trải nghiệm nền tảng.",
+      "en": "Builds modern web products and platform experiences."
+    },
+    "projects": []
+  },
+  {
+    "id": "member-2",
+    "slug": "jordan-lee",
+    "name": "Jordan Lee",
+    "avatarUrl": null,
+    "cvUrl": null,
+    "socials": [],
+    "sortOrder": 1,
+    "publishedAt": "2026-01-15T12:00:00.000Z",
+    "role": {
+      "vi": "Product Designer",
+      "en": "Product Designer"
+    },
+    "bio": {
+      "vi": "Thiết kế hệ thống giao diện và trải nghiệm người dùng.",
+      "en": "Designs interface systems and user experiences."
+    },
+    "projects": []
+  }
+]
