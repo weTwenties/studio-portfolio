@@ -97,3 +97,11 @@ The `data/` directory ships with sanitized demo content (fictional members and p
 ## Project status
 
 Engineering showcase — public source for demonstration, not an open-source contribution project.
+
+
+## License
+
+This repository is publicly available for viewing and evaluation only.
+It is not distributed as open-source software.
+
+See [LICENSE](LICENSE) for details.
